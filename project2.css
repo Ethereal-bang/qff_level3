@@ -20,6 +20,7 @@
     height: 20px;
     width: 100%;
     font-size: 14px;
+    float: left;    /* 让下拉菜单的显示不影响布局 */    
 }
 .nav_sub{
     display: none;
