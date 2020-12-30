@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#nav{
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav_li{
+    width: 60px;
+    height: 100%;
+    margin: 0 30px;
+    font-size: 20px;
+    display: inline-block;
+}
+.nav_sub>li{
+    height: 20px;
+    width: 100%;
+    font-size: 14px;
+}
+.nav_sub{
+    display: none;
+}
