@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    list-style-type: none;
+}
+#tab_list li{
+    display: inline-block;
+    width: 24%;
+    height: 50px;
+    background-color: darkgrey;
+    text-align: center;
+    line-height: 50px;
+}
+p{
+    display: none;
+}
+#first_p{
+    display: block;
+}
