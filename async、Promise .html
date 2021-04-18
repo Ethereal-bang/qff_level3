@@ -1,0 +1,38 @@
+<body>
+    <button>暂停</button>
+<script>
+    let btn = document.getElementsByTagName("button")[0];
+    let count = 0;
+    let res = undefined;
+
+    function p() {
+        return new Promise((resolve) => {
+            if (count % 2 == 0)
+                setTimeout( () => {
+                    resolve();
+                }, 100)
+            else
+                res = resolve;
+        })
+    }
+    async function constant() {
+        while (true)
+        {
+            await p();
+            console.log("进行");
+        }
+    }
+
+    constant();
+
+    btn.addEventListener("click", function() {
+        if (count % 2 == 0) {
+            count++;
+            btn.innerText = "继续";
+        } else {
+            count++;
+            res();
+            btn.innerText = "进行";
+        }
+    })
+</script>
